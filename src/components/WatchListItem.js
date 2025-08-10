@@ -3,7 +3,7 @@ import React from "react";
 import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 import WatchListAction from "./WatchListAction";
 
-function WacthListItem({ stock }) {
+function WatchListItem({ stock }) {
   const [showWatchListActions, SetShowWatchListActions] = React.useState(false);
 
   const handleMouseEnter = (e) => SetShowWatchListActions(true);
@@ -25,4 +25,4 @@ function WacthListItem({ stock }) {
   );
 }
 
-export default WacthListItem;
+export default WatchListItem;

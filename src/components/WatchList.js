@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import { watchlist } from "../data/data";
-import WacthListItem from "./WatchListItem";
+import { watchlist } from "../data/data.js";
+import WatchListItem from "./WatchListItem";
 import { DoughnutChart } from "./DoughnutChart";
 
 const WatchList = () => {
@@ -91,7 +91,7 @@ const WatchList = () => {
         }}
       >
         {watchlist.map((stock, index) => {
-          return <WacthListItem stock={stock} key={index} />;
+          return <WatchListItem stock={stock} key={index} />;
         })}
       </ul>
 
